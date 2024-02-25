@@ -41,7 +41,18 @@ select * from Customer will display all the contents in the table.
 <h1>3</h1>  <h1> insert command</h1>
 
 insert command in sql is used for inserting records into the table 
-ex---
+
+EX-
+
+insert into Customer(id,firstname,lastname,Age,City)values(1,'Yashwanth','Reddy',33,'hyderabad');
+insert into Customer(id,firstname,lastname,Age,City)values(2,'pooja','shetty',23,'delhi')
+insert into Customer(id,firstname,lastname,Age,City)values(3,'shiva','Reddy',28,'hyderabad')
+insert into Customer(id,firstname,lastname,Age,City)values(4,'ram','Reddy',13,'mumbai')
+insert into Customer(id,firstname,lastname,Age,City)values(5,'raj','kumar',21,'pune')
+insert into Customer(id,firstname,lastname,Age,City)values(6,'shareef','murtuza',26,'chennai');
+
+<img width="801" alt="Screenshot 2024-02-25 at 8 31 56 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6db3ef79-1998-40d7-afc4-139f937c7b10">
+
 
 
 
