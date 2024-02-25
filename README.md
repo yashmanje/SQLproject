@@ -2,7 +2,9 @@
 In this project i have created a sample database to learn and practise sql query's
 
 <h2>INTRODUCTION</h2> 
-# In this project i have used mysql community server and debeaver for my practise 
+# Tools used  mysql community server and debeaver. 
 
 
-Creating database 
+<h1>1</h1>Creating database 
+for creating a database in sql we use create command 
+Sy
