@@ -46,10 +46,15 @@ select * from Customer will display all the contents in the table.
 EX-
 
 insert into Customer(id,firstname,lastname,Age,City)values(1,'Yashwanth','Reddy',33,'hyderabad');
+
 insert into Customer(id,firstname,lastname,Age,City)values(2,'pooja','shetty',23,'delhi')
+
 insert into Customer(id,firstname,lastname,Age,City)values(3,'shiva','Reddy',28,'hyderabad')
+
 insert into Customer(id,firstname,lastname,Age,City)values(4,'ram','Reddy',13,'mumbai')
+
 insert into Customer(id,firstname,lastname,Age,City)values(5,'raj','kumar',21,'pune')
+
 insert into Customer(id,firstname,lastname,Age,City)values(6,'shareef','murtuza',26,'chennai');
 
 <img width="801" alt="Screenshot 2024-02-25 at 8 31 56 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6db3ef79-1998-40d7-afc4-139f937c7b10">
@@ -80,18 +85,18 @@ select * from product
 
  #we can add modify column and even change column datatype as well 
 
- #here i have modified product_price table datatype as float(6,2)
+ here i have modified product_price table datatype as float(6,2)
 
      ALTER TABLE product 
     modify  product_price float(6,2);
 
-<h1>5</h1> <h1>UPdate</h1>
+<h1>5</h1> <h1>Update</h1>
 
-update command is sql to update records in the table 
+update command in sql is used  to update records in the table 
 
-UPDATE product
-SET product_price =199.89
-WHERE id = 5;
+ UPDATE product
+ SET product_price =199.89
+ WHERE id = 5;
 
 <img width="657" alt="Screenshot 2024-02-25 at 10 01 08 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/0808aea1-2690-4230-9614-3bb53811bc75">
 
