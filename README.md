@@ -74,6 +74,29 @@ select * from product
 <img width="657" alt="Screenshot 2024-02-25 at 8 52 34 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/faede961-ab2a-42f8-a071-32b089d22ea4">
 
 
+<h1>4</h1> <h1>Alter command</h1> 
+
+ #In sql we use alter command to edit the table and we can perform differnt task depending upon requirements 
+
+ #we can add modify column and even change column datatype as well 
+
+ #here i have modified product_price table datatype as float(6,2)
+
+     ALTER TABLE product 
+    modify  product_price float(6,2);
+
+<h1>5</h1> <h1>UPdate</h1>
+
+update command is sql to update records in the table 
+
+UPDATE product
+SET product_price =199.89
+WHERE id = 5;
+
+<img width="657" alt="Screenshot 2024-02-25 at 10 01 08 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/0808aea1-2690-4230-9614-3bb53811bc75">
+
+
+
 
 
 
