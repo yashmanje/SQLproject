@@ -85,7 +85,7 @@ select * from product
 
 <h1>4</h1> <h1>Alter command</h1> 
 
- #In sql we use alter command to edit the table and we can perform differnt task depending upon requirements 
+ #In sql we use alter command to edit the table and we can perform different task depending upon requirements 
 
  #we can add modify column and even change column datatype as well 
 
