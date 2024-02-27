@@ -104,7 +104,7 @@ update command in sql is used  to update records in the table
 
 <img width="657" alt="Screenshot 2024-02-25 at 10 01 08 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/0808aea1-2690-4230-9614-3bb53811bc75">
 
-i have created a new table Orders and created new columns and use datetime function
+i have created a new table Orders and created new columns and used datetime function
 
 CREATE table orders
 (
@@ -120,6 +120,24 @@ CREATE table orders
 SELECT * from orders
 
 <img width="657" alt="Screenshot 2024-02-28 at 12 48 26 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/873dd66a-240e-4947-920d-f4b6aa6b3150">
+
+i have inserted some random orders into orders table 
+
+INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),1,3)
+
+INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),2,3)
+
+INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),3,3)
+
+INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),4,3)
+
+INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),5,3)
+
+INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),6,3)
+
+<img width="607" alt="Screenshot 2024-02-28 at 1 35 47 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/c2c45a19-fd16-45f3-922e-c636216d30ef">
+
+
 
 
 
