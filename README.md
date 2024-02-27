@@ -138,6 +138,20 @@ INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),6,3)
 <img width="607" alt="Screenshot 2024-02-28 at 1 35 47 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/c2c45a19-fd16-45f3-922e-c636216d30ef">
 
 
+<H1>Foreign keys</H1>
+foreign keys are constraint  used for linking two tables together 
+
+A FOREIGN KEY is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.
+
+ here i have linked customerid from orders table to customer table id primary key 
+ and i have also linked productID from orders table to primary key of products tables 
+
+  alter table orders 
+  add foreign key (CustomerID) references customer(id)
+
+  alter table orders 
+  add foreign key (productID) references product(id)
+
 
 
 
