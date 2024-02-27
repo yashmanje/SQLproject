@@ -152,6 +152,10 @@ A FOREIGN KEY is a field (or collection of fields) in one table that refers to t
   alter table orders 
   add foreign key (productID) references product(id)
 
+  ER Diagram 
+
+  
+
 
 
 
