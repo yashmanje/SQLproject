@@ -104,6 +104,24 @@ update command in sql is used  to update records in the table
 
 <img width="657" alt="Screenshot 2024-02-25 at 10 01 08 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/0808aea1-2690-4230-9614-3bb53811bc75">
 
+i have created a new table Orders and created new columns and use datetime function
+
+CREATE table orders
+(
+  OrderID int primary key AUTO_INCREMENT,
+  OrderDate Datetime,
+  CustomerID int,
+  ProductID int
+  
+  
+)
+
+
+SELECT * from orders
+
+<img width="657" alt="Screenshot 2024-02-28 at 12 48 26 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/873dd66a-240e-4947-920d-f4b6aa6b3150">
+
+
 
 
 
