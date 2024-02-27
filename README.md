@@ -69,9 +69,13 @@ product_price float
 )
 
 insert into product (id,prodcut_name ,product_price)values(1,'BAT',299.89);
+
 insert into product (id,prodcut_name ,product_price)values(2,'BAll',19.89);
+
 insert into product (id,prodcut_name ,product_price)values(3,'gloves',99.89);
+
 insert into product (id,prodcut_name ,product_price)values(4,'helmet',169.89);
+
 insert into product (id,prodcut_name ,product_price)values(5,'Pads',199.89);
 
 select * from product 
