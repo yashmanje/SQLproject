@@ -39,9 +39,9 @@ City VARCHAR(50)
 select * from Customer will display all the contents in the table.
 
 
-<h1>3</h1>  <h1> insert command</h1>
+<h1>3</h1>  <h1> Insert command</h1>
 
-# insert command in sql is used for inserting records into the table 
+# Insert command in sql is used for inserting records into the table 
 
 EX-
 
@@ -103,6 +103,8 @@ update command in sql is used  to update records in the table
  WHERE id = 5;
 
 <img width="657" alt="Screenshot 2024-02-25 at 10 01 08 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/0808aea1-2690-4230-9614-3bb53811bc75">
+
+
 
 
 
