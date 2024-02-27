@@ -154,6 +154,7 @@ A FOREIGN KEY is a field (or collection of fields) in one table that refers to t
 
   ER Diagram 
 
+  <img width="523" alt="Screenshot 2024-02-28 at 2 07 00 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/8628f957-aefe-4825-b317-3683fc5aade9">
   
 
 
