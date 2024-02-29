@@ -169,10 +169,16 @@ An SQL Join clause is used to combine multiple related tables in a database, bas
 
 here i have combined all the three tables customer,orders,product using inner join 
 
+
+
 SELECT *
+
 from Orders
+
 inner JOIN Product on Orders.ProductID=Product.ID
+
 inner JOIN Customer  on Orders.CustomerID =customer.ID
+
 
 <img width="1288" alt="Screenshot 2024-02-29 at 6 11 25 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6b0bb548-ec56-4f80-ae0d-82b26efe5003">
   
