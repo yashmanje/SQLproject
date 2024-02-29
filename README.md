@@ -198,6 +198,7 @@ inner join Customer as c on o.CustomerID=c.ID
 
 <img width="1286" alt="Screenshot 2024-02-29 at 6 16 30 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/a88e307d-67cc-4863-baa7-1667592af187">
 
+
 with the following data i will be performing various query on this data 
   
 
