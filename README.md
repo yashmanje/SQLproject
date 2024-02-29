@@ -288,6 +288,8 @@ inner join Customer as c on o.CustomerID=c.ID
 GROUP by c.Firstname
 ````
 
+
+
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/c556cbbb-d1b6-4446-ad70-e13706aac85f)
 
 
