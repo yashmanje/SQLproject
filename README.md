@@ -135,7 +135,10 @@ INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),5,3)
 
 INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),6,3)
 
-<img width="607" alt="Screenshot 2024-02-28 at 1 35 47 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/c2c45a19-fd16-45f3-922e-c636216d30ef">
+<img width="629" alt="Screenshot 2024-02-29 at 5 22 04 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/818bb519-38d5-42a4-90b9-243567781e2a">
+
+<img width="629" alt="Screenshot 2024-02-29 at 5 22 13 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/2c1d5d6d-9e8d-47c0-87da-2745a074d23f">
+
 
 
 <H1>Foreign keys</H1>
