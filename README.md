@@ -276,6 +276,21 @@ ORDER by c.City asc
 <img width="608" alt="Screenshot 2024-02-29 at 10 03 56 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/10cb4b66-f0ad-4065-bc9e-2c6fac7592b9">
 
 
+COUNT 
+
+using count function i have computed list of orders ordered by each person 
+
+````
+SELECT c.Firstname,COUNT(p.prodcut_name)
+from Orders as o
+inner JOIN Product as p on o.ProductID=p.ID
+inner join Customer as c on o.CustomerID=c.ID
+GROUP by c.Firstname
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/c556cbbb-d1b6-4446-ad70-e13706aac85f)
+
+
 
 
 
