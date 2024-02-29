@@ -14,7 +14,7 @@
 # for using the correspondind database we use 'USE' command 
 ex --USE customer 
 
-<h1>2</h1> creating table in database
+ creating table in database
  
 create TABLE Customer
 (
@@ -32,14 +32,14 @@ City VARCHAR(50)
 <img width="883" alt="Screenshot 2024-02-25 at 7 53 50 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/51efe4b3-176d-4682-a749-b8eb2190b073">
 
 
-<h1>2</h1> <H1> select command </H1>
+ <H1> select command </H1>
 
 # for viewing a table we use select command 
 
 select * from Customer will display all the contents in the table.
 
 
-<h1>3</h1>  <h1> Insert command</h1>
+  <h1> Insert command</h1>
 
 # Insert command in sql is used for inserting records into the table 
 
@@ -83,7 +83,7 @@ select * from product
 <img width="657" alt="Screenshot 2024-02-25 at 8 52 34 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/faede961-ab2a-42f8-a071-32b089d22ea4">
 
 
-<h1>4</h1> <h1>Alter command</h1> 
+ <h1>Alter command</h1> 
 
  #In sql we use alter command to edit the table and we can perform different task depending upon requirements 
 
@@ -94,7 +94,7 @@ select * from product
      ALTER TABLE product 
     modify  product_price float(6,2);
 
-<h1>5</h1> <h1>Update</h1>
+ <h1>Update</h1>
 
 update command in sql is used  to update records in the table 
 
@@ -162,8 +162,19 @@ A FOREIGN KEY is a field (or collection of fields) in one table that refers to t
   <img width="523" alt="Screenshot 2024-02-28 at 2 07 00 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/8628f957-aefe-4825-b317-3683fc5aade9">
 
 
-  <h1>6</h1> JOINS 
-  
+
+  <h1>Inner Join</h1> 
+
+An SQL Join clause is used to combine multiple related tables in a database, based on common fields/columns.
+
+here i have combined all the three tables customer,orders,product using inner join 
+
+SELECT *
+from Orders
+inner JOIN Product on Orders.ProductID=Product.ID
+inner JOIN Customer  on Orders.CustomerID =customer.ID
+
+<img width="1288" alt="Screenshot 2024-02-29 at 6 11 25 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6b0bb548-ec56-4f80-ae0d-82b26efe5003">
   
 
 
