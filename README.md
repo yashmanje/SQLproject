@@ -15,7 +15,7 @@
 ex --USE customer 
 
  creating table in database
- 
+```` 
 create TABLE Customer
 (
 id int PRIMARY key,
@@ -24,7 +24,7 @@ Lastname varchar(50),
 Age int,
 City VARCHAR(50)
 )
-
+````
 # SQL offers different datatypes 
  in this table i have used primary key with integer  as datatype
  and for variable i have Varchar datatype and set the space to 50 
