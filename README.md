@@ -293,6 +293,22 @@ GROUP by c.Firstname
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/c556cbbb-d1b6-4446-ad70-e13706aac85f)
 
 
+Having clause 
+having clause is used for performing aggregated functions on the group
+
+here i have used having clause on the group to get the count  
+
+````
+SELECT c.Firstname,p.prodcut_name ,sum(p.product_price),COUNT(p.product_price) 
+from Orders as o
+inner JOIN Product as p on o.ProductID=p.ID
+inner join Customer as c on o.CustomerID=c.ID
+GROUP by c.Firstname, p.prodcut_name 
+HAVING count(p.prodcut_name)>=2
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/f5039e2f-dfae-44a6-8738-e586f1bea8f1)
+
 
 
 
