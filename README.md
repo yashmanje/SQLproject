@@ -181,6 +181,22 @@ inner JOIN Customer  on Orders.CustomerID =customer.ID
 
 
 <img width="1288" alt="Screenshot 2024-02-29 at 6 11 25 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6b0bb548-ec56-4f80-ae0d-82b26efe5003">
+
+
+i have cleaned the data using alias and removed some columns and simplified the result 
+
+
+SELECT o.OrderDate,c.Firstname,c.Lastname,c.Age,c.City,p.prodcut_name,p.product_price  
+
+from Orders as o
+
+inner JOIN Product as p on o.ProductID=p.ID
+
+inner join Customer as c on o.CustomerID=c.ID  
+
+
+
+<img width="1286" alt="Screenshot 2024-02-29 at 6 16 30 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/a88e307d-67cc-4863-baa7-1667592af187">
   
 
 
