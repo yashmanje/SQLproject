@@ -205,11 +205,8 @@ with the following data i will be performing various query on this data
 
 <h1>Group by </h1>
 n SQL, The Group By statement is used for organizing similar data into groups. 
-The data is further organized with the help of equivalent function.
-It means, if different rows in a precise column have the same values, it will arrange those rows in a group.
-
-the main purpose of grouping the records of a table based on particular columns is to perform calculations on these groups. 
-Therefore, The GROUP BY clause is typically used with aggregate functions such as SUM(), COUNT(), AVG(), MAX(), or MIN() etc.
+the main purpose of grouping the records of a table based on particular columns is to perform calculations on these groups
+typically used with aggregate functions such as SUM(), COUNT(), AVG(), MAX(), or MIN() etc.
 
 
 
