@@ -208,6 +208,9 @@ n SQL, The Group By statement is used for organizing similar data into groups.
 the main purpose of grouping the records of a table based on particular columns is to perform calculations on these groups
 typically used with aggregate functions such as SUM(), COUNT(), AVG(), MAX(), or MIN() etc.
 
+<img width="608" alt="Screenshot 2024-02-29 at 9 46 45 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/1e19ea01-cc30-4dd0-956a-158bf31607a9">
+
+
 
 
 
