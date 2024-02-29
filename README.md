@@ -208,7 +208,46 @@ n SQL, The Group By statement is used for organizing similar data into groups.
 the main purpose of grouping the records of a table based on particular columns is to perform calculations on these groups
 typically used with aggregate functions such as SUM(), COUNT(), AVG(), MAX(), or MIN() etc.
 
+here in the following code i have used sum to function to get the total of product price 
+````
+SELECT c.Firstname,sum(p.product_price) 
+from Orders as o
+inner JOIN Product as p on o.ProductID=p.ID
+inner join Customer as c on o.CustomerID=c.ID
+GROUP by c.Firstname
+````
+
 <img width="608" alt="Screenshot 2024-02-29 at 9 46 45 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/1e19ea01-cc30-4dd0-956a-158bf31607a9">
+
+<h1>Order by </h1>
+
+using order by keyword i have sorted the data in asc and desc order 
+
+DESC
+````
+SELECT c.Firstname,sum(p.product_price) 
+from Orders as o
+inner JOIN Product as p on o.ProductID=p.ID
+inner join Customer as c on o.CustomerID=c.ID
+GROUP by c.Firstname 
+ORDER by c.Firstname DESC
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/6840de16-04ae-466b-bd90-af0ddf8d2d92)
+
+ASC
+
+````
+SELECT c.Firstname,sum(p.product_price) 
+from Orders as o
+inner JOIN Product as p on o.ProductID=p.ID
+inner join Customer as c on o.CustomerID=c.ID
+GROUP by c.Firstname 
+ORDER by c.Firstname ASC
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/af6c0957-f2ea-4b57-a28f-022b5ed7f199)
+
 
 
 
