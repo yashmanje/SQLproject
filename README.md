@@ -108,6 +108,16 @@ where id =5
 
 <img width="614" alt="Screenshot 2024-03-03 at 7 30 34 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/be0c43c0-f597-4dc5-9510-67166b6d68a2">
 
+Ex-3 
+
+````
+select * from product
+where product_price >=100
+````
+
+<img width="614" alt="Screenshot 2024-03-03 at 7 32 51 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/5116c270-926c-45a0-97dd-338003a7245b">
+
+
 
 
 
