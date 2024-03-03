@@ -84,6 +84,28 @@ select * from product
 <img width="657" alt="Screenshot 2024-02-25 at 8 52 34 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/faede961-ab2a-42f8-a071-32b089d22ea4">
 
 
+<h1>WHERE Clause </h1>
+
+The WHERE clause is used to filter records.
+
+It is used to extract only those records that fulfill a specified condition.
+
+
+````
+select * from Customer 
+where Lastname ='reddy'
+order by Firstname  ASC
+````
+
+<img width="614" alt="Screenshot 2024-03-03 at 7 27 29 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/46c70bf3-04d6-4196-a7e5-a378f1b34cbd">
+
+
+
+
+
+
+
+
  <h1>Alter command</h1> 
 
  #In sql we use alter command to edit the table and we can perform different task depending upon requirements 
