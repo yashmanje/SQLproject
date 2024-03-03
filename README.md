@@ -99,6 +99,16 @@ order by Firstname  ASC
 
 <img width="614" alt="Screenshot 2024-03-03 at 7 27 29 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/46c70bf3-04d6-4196-a7e5-a378f1b34cbd">
 
+Ex-2
+
+````
+select * from Customer
+where id =5
+````
+
+<img width="614" alt="Screenshot 2024-03-03 at 7 30 34 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/be0c43c0-f597-4dc5-9510-67166b6d68a2">
+
+
 
 
 
