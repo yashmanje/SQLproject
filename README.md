@@ -381,6 +381,39 @@ HAVING count(p.prodcut_name)>=2
 
 
 
+created a new database for further practise 
+
+````
+create table Student
+(
+RollNo int primary key not null,
+FirstName varchar(50),
+LastName varchar(50)
+)
+
+select * from Student 
+
+alter table Student 
+add column city varchar(50)
+````
+
+inserted following data into student table 
+
+````
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(100,'Pooja','Kapoor',98,'A','Hyderabad')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(101,'Sandeep','Reddy',68,'c','Delhi')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(102,'yashwanth','reddy',95,'A','Hyderabad')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(103,'Shekar','Rao',88,'B','Chennai')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(104,'Deepika','shetty',58,'C','Hyderabad')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(105,'kareena','Kapoor',38,'D','Mumbai')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(106,'Rahul','reddy',88,'B','Delhi')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(107,'Digvijay','Reddy',99,'A','Hyderabad')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(108,'Shefali','Khan',58,'C','Delhi')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(109,'poonam','shetty',78,'B','Hyderabad')
+insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(110,'rohit','Rao',68,'C','Mumbai')
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/2223b089-44c7-4c6f-a9ec-fe6b2b036721)
 
 
 
