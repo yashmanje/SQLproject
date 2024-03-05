@@ -32,6 +32,32 @@ City VARCHAR(50)
 <img width="883" alt="Screenshot 2024-02-25 at 7 53 50 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/51efe4b3-176d-4682-a749-b8eb2190b073">
 
 
+<h2>DESCRIBE TABLE </h2>
+i have used here Describe command to show description of following tables 
+
+````
+desc Customer
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/72affb87-fd46-4216-b33f-121990af4a98)
+
+
+````
+desc product
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/79ec043b-7d3b-4646-b565-6a9a5a2b9bd8)
+
+
+````
+desc orders
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/02e7fbda-5765-4d79-90ef-2fae8178320c)
+
+
+
+
  <H1> select command </H1>
 
 # for viewing a table we use select command 
