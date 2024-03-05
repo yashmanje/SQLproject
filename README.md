@@ -430,6 +430,49 @@ select * from Student
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/77ce1d4c-b5f1-440c-bb98-6cdcaa5cac83)
 
 
+<h1>Operators </h1>
+
+In SQL we have different operators we can use to perform query's 
+
+<h3>AND</h3> 
+
+The AND operator is used to filter records based on more than one condition
+
+using student table i have implemented AND operator to get results of those students who scored more than 70 and belong to city hyderabad 
+
+````
+select * from Student
+where marks >70 and city='hyderabad'
+````
+
+<img width="826" alt="Screenshot 2024-03-06 at 1 11 38 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/450d6abf-bd30-4003-9899-1e742e0f3789">
+
+EX-2 
+
+````
+select * from Student
+where grade='A' and LastName ='reddy'
+order by marks DESC
+````
+
+<img width="732" alt="Screenshot 2024-03-06 at 1 15 47 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/e0e749de-de9a-42d5-9dcb-7838b76d2cde">
+
+
+<H3>OR </H3>
+
+The OR operator is used to filter records based on more than one condition
+
+using student table i have implemented OR operator to get results of those students who got B grade  and city is hyderabad
+
+````
+select * from Student  
+where grade="B" or city ='hyderabad'
+````
+
+![Uploading image.png…]()
+
+
+
 
 
 
