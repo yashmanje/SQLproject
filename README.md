@@ -469,7 +469,8 @@ select * from Student
 where grade="B" or city ='hyderabad'
 ````
 
-![Uploading image.png…]()
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/63c94be5-0cea-4fd8-8f7a-75041a58b133)
+
 
 
 
