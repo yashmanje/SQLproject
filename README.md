@@ -423,6 +423,12 @@ desc Student
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/4275588a-ceb8-4dec-bd95-65746c76147a)
 
+````
+select * from Student
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/77ce1d4c-b5f1-440c-bb98-6cdcaa5cac83)
+
 
 
 
