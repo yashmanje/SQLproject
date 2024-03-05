@@ -472,6 +472,55 @@ where grade="B" or city ='hyderabad'
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/63c94be5-0cea-4fd8-8f7a-75041a58b133)
 
 
+EX-2
+
+````
+select * from Student  
+where marks>=50  or LastName ='shetty'
+
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/faddc29d-5b5a-45c2-84a0-af9a663534ce)
+
+<H3>Between operator </H3>
+
+The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
+
+The BETWEEN operator is inclusive: begin and end values are included. 
+
+````
+select * from Student
+where marks BETWEEN 60 and 90 
+````
+<img width="732" alt="Screenshot 2024-03-06 at 1 33 41 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/df9641a1-c846-4a31-a217-a8a4ace5376e">
+
+
+<h3>IN operator </h3>
+
+The IN operator allows you to specify multiple values in a WHERE clause.
+
+````
+select * from Student
+where city in ('delhi','pune')
+````
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/ca8db7fa-189c-4581-be08-361d75ef0290)
+
+<h3>NOT Operator </h3>
+
+The NOT operator is used in combination with other operators to give the opposite result, also called the negative result.
+
+````
+select * from Student
+where city not in ('delhi','pune')
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/842aff2e-7a9c-4728-a98c-bb606796a754)
+
+
+
+
+
+
 
 
 
