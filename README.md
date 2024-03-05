@@ -416,6 +416,14 @@ insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(110,'roh
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/2223b089-44c7-4c6f-a9ec-fe6b2b036721)
 
 
+DESCRIBE Table 
+````
+desc Student
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/4275588a-ceb8-4dec-bd95-65746c76147a)
+
+
 
 
 
