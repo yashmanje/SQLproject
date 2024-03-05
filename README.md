@@ -276,6 +276,9 @@ n SQL, The Group By statement is used for organizing similar data into groups.
 the main purpose of grouping the records of a table based on particular columns is to perform calculations on these groups
 typically used with aggregate functions such as SUM(), COUNT(), AVG(), MAX(), or MIN() etc.
 
+
+<h4>SUM</h4>
+
 here in the following code i have used sum to function to get the total of product price 
 ````
 SELECT c.Firstname,sum(p.product_price) 
