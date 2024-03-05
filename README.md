@@ -517,6 +517,40 @@ where city not in ('delhi','pune')
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/842aff2e-7a9c-4728-a98c-bb606796a754)
 
 
+<h1>Limit clause </h1>
+
+The LIMIT clause is used to specify the number of records to return.
+
+The LIMIT clause is useful on large tables with thousands of records. Returning a large number of records can impact performance.
+i used limit clause here to get only 5 student records who have scored more than 50 marks and odered them desc 
+````
+select * from student 
+where marks>=50 
+order by marks desc 
+limit 5
+````
+
+<img width="732" alt="Screenshot 2024-03-06 at 1 50 28 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/c04ecb33-12b0-4e61-8cfa-55f1c4913f99">
+
+<h3>OFFSET</h3>
+
+MySQL Offset is used to specify from which row we want the data to retrieve. To be precise, specify which row to start retrieving from. Offset is used along with the LIMIT. 
+
+````
+select * from student 
+order by marks desc 
+limit 5 offset 4
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/be9d66f7-f6e0-4754-a326-d553da1bf5ee)
+
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/fbb61c8e-2159-4509-ad94-458983b99488)
+
+
+
+
+
 
 
 
