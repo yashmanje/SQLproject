@@ -809,7 +809,53 @@ where s.id is null
 
 </br>
 
+<h2>Self join </h2>
 
+A self join is a regular join, but the table is joined with itself.
+
+````
+create table employee 
+(
+ID int primary key,
+Name varchar (50),
+manager_ID int 
+
+)
+
+insert into employee (ID,Name,manager_ID)
+values 
+(101,'Adam',103),
+(102,'Bob',104),
+(103,'Casey',NUll),
+(104,'donald',103);
+
+SELECT  a.name as manager_name ,b.Name 
+from employee as a join employee as b 
+on 
+a.id=b.manager_ID 
+````
+
+<img width="784" alt="Screenshot 2024-03-07 at 3 49 39 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/c2e3cb78-3ebe-4c04-a614-60bf4ac75a2c">
+
+<img width="784" alt="Screenshot 2024-03-07 at 3 50 09 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/8972ae74-33e1-4dfa-b3e6-ad570fade5b4">
+
+</br>
+
+<h1>Union </h1>
+
+the UNION operator is used to combine the result-set of two or more SELECT statements.
+
+Every SELECT statement within UNION must have the same number of columns
+The columns must also have similar data types
+The columns in every SELECT statement must also be in the same order
+
+````
+select name  from employee  
+union 
+select name  from employee
+````
+
+<img width="784" alt="Screenshot 2024-03-07 at 4 00 44 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/da97b833-6be2-413f-adc8-2722705f7f9f">
 
 
 
