@@ -738,8 +738,44 @@ s.ID =c.ID
 
 <img width="569" alt="Screenshot 2024-03-07 at 2 49 53 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/355c7907-b517-4fbb-b269-007851e59e0e">
 
+</br>
 
+<h2>Full Join </h2>
 
+The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
+
+In mysql we have to use union for full join to indirectly implement full join.
+
+````
+select * from student s 
+left  join Course c 
+on 
+s.ID =c.ID 
+
+union 
+
+select * from student s 
+right  join Course c 
+on 
+s.ID =c.ID 
+````
+
+<img width="569" alt="Screenshot 2024-03-07 at 2 57 23 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/b703c63b-0c7b-4792-b5e9-cbd7e162a5e9">
+
+</br>
+
+<h2>Cross Join </h2>
+
+The CROSS JOIN keyword returns all records from both tables (table1 and table2)
+
+````
+select * from student s 
+cross join Course c 
+on 
+s.ID =c.ID
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/d1fce17e-7ea9-429e-86b4-aa8ae1113984)
 
 
 
