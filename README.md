@@ -12,6 +12,8 @@
 
 # for creating a database in sql we use create command 
  Syntax ----- create database customer,
+
+</br>
  
 # for using the correspondind database we use 'USE' command 
 ex --USE customer 
@@ -38,7 +40,7 @@ City VARCHAR(50)
 
 <img width="883" alt="Screenshot 2024-02-25 at 7 53 50 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/51efe4b3-176d-4682-a749-b8eb2190b073">
 
-
+</br>
 
 <h2>DESCRIBE TABLE </h2>
 i have used here Describe command to show description of following tables 
@@ -50,6 +52,7 @@ desc Customer
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/72affb87-fd46-4216-b33f-121990af4a98)
 
+</br>
 
 ````
 desc product
@@ -57,6 +60,7 @@ desc product
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/79ec043b-7d3b-4646-b565-6a9a5a2b9bd8)
 
+</br>
 
 ````
 desc orders
