@@ -777,10 +777,37 @@ s.ID =c.ID
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/d1fce17e-7ea9-429e-86b4-aa8ae1113984)
 
+</br>
 
+<h2>Left exclusive join </h2>
 
+this join only return the records in left table non overlapping 
 
+````
+select * from student s 
+left join Course c 
+on 
+s.ID =c.ID 
+where c.id is null
+````
+<img width="569" alt="Screenshot 2024-03-07 at 3 19 01 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/ef2f7a27-cc1b-496f-adc3-8b8ad1567695">
 
+</br>
+
+<h2>Right exclusive join </h2>
+
+this join only return the records in right table non overlapping 
+
+````
+select * from student s 
+right join Course c 
+on 
+s.ID =c.ID 
+where s.id is null
+````
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/502e41f9-0114-4174-b22d-572181adff76)
+
+</br>
 
 
 
