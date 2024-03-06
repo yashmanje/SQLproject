@@ -527,6 +527,7 @@ where city not in ('delhi','pune')
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/842aff2e-7a9c-4728-a98c-bb606796a754)
 
+</br>
 
 <h1>Limit clause </h1>
 
@@ -542,6 +543,8 @@ limit 5
 ````
 
 <img width="732" alt="Screenshot 2024-03-06 at 1 50 28 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/c04ecb33-12b0-4e61-8cfa-55f1c4913f99">
+
+</br>
 
 <h3>OFFSET</h3>
 
