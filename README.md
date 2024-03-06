@@ -583,7 +583,7 @@ drop column city
 
 <img width="732" alt="Screenshot 2024-03-06 at 3 16 43 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/5f3024f0-9996-4d9a-bcbd-e9c25e4c2480">
 
-</br>
+
 
 
 
