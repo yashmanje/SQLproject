@@ -558,6 +558,8 @@ limit 5 offset 4
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/fbb61c8e-2159-4509-ad94-458983b99488)
 
+</br>
+
 
 <H1>Truncate </H1>
 
