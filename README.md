@@ -650,28 +650,45 @@ drop database student_records
 </br>
 
 creating a new database and table to practise different joins 
+````
+create table student 
+(
+ID int primary key, 
+Name varchar (50)
+)
+
+insert into student  (ID,Name )
+
+values 
+(101,'Jack'),
+(102,'Smith'),
+(103,'Jennifer '),
+(104,'kendra');
+````
+ 
+````
+create table Course
+(
+ID int primary key,
+Course varchar(50)
+
+)
+ 
+insert into Course (ID,Course)
+values 
+(102,'English'),
+(104,'Math'),
+(105,'Science'),
+(107,'Computer Science')
+
+````
 
 
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/ff5f7ab3-1dcf-4025-b859-850a0b4c8c65)
 
+</br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img width="782" alt="Screenshot 2024-03-07 at 1 38 30 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/2a7e9295-fca6-4d64-8c6e-3efb2a78e7eb">
-
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/f781a125-c6b7-4043-81a8-d5f5a8e37b9b)
 
 
 
