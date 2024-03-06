@@ -4,16 +4,19 @@
 <h1>INTRODUCTION</h1> 
 # Tools used  mysql community server and debeaver. 
 
+<br/>
+
 # In this project i have created cricket store with 3 different tables namely customer, product table , order table 
 
  Create a database 
 
 # for creating a database in sql we use create command 
  Syntax ----- create database customer,
-
+<br/>
 # for using the correspondind database we use 'USE' command 
 ex --USE customer 
 
+<br/>
  creating table in database
 ```` 
 create TABLE Customer
@@ -25,12 +28,17 @@ Age int,
 City VARCHAR(50)
 )
 ````
+
+<br/>
+
 # SQL offers different datatypes 
  in this table i have used primary key with integer  as datatype
  and for variable i have Varchar datatype and set the space to 50 
 
+<br/>
 <img width="883" alt="Screenshot 2024-02-25 at 7 53 50 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/51efe4b3-176d-4682-a749-b8eb2190b073">
 
+<br/>
 
 <h2>DESCRIBE TABLE </h2>
 i have used here Describe command to show description of following tables 
@@ -39,16 +47,17 @@ i have used here Describe command to show description of following tables
 desc Customer
 ````
 
+<br/>
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/72affb87-fd46-4216-b33f-121990af4a98)
 
 
 ````
 desc product
 ````
-
+<br/>
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/79ec043b-7d3b-4646-b565-6a9a5a2b9bd8)
 
-
+<br/>
 ````
 desc orders
 ````
@@ -57,7 +66,7 @@ desc orders
 
 
 
-
+<br/>
  <H1> select command </H1>
 
 # for viewing a table we use select command 
@@ -84,8 +93,9 @@ insert into Customer(id,firstname,lastname,Age,City)values(5,'raj','kumar',21,'p
 
 insert into Customer(id,firstname,lastname,Age,City)values(6,'shareef','murtuza',26,'chennai'); 
 ````
+<br/>
 <img width="801" alt="Screenshot 2024-02-25 at 8 31 56 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6db3ef79-1998-40d7-afc4-139f937c7b10">
-
+<br/>
 # I have created a new table for products and inserted the following data into the table 
 ````
 create TABLE product
@@ -94,7 +104,7 @@ id int PRIMARY key,
 prodcut_name VARCHAR(50),
 product_price float
 )
-
+<br/>
 insert into product (id,prodcut_name ,product_price)values(1,'BAT',299.89);
 
 insert into product (id,prodcut_name ,product_price)values(2,'BAll',19.89);
@@ -109,7 +119,7 @@ select * from product
 ````
 <img width="657" alt="Screenshot 2024-02-25 at 8 52 34 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/faede961-ab2a-42f8-a071-32b089d22ea4">
 
-
+<br/>
 <h1>WHERE Clause </h1>
 
 The WHERE clause is used to filter records.
@@ -124,7 +134,7 @@ order by Firstname  ASC
 ````
 
 <img width="614" alt="Screenshot 2024-03-03 at 7 27 29 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/46c70bf3-04d6-4196-a7e5-a378f1b34cbd">
-
+<br/>
 Ex-2
 
 ````
@@ -133,7 +143,7 @@ where id =5
 ````
 
 <img width="614" alt="Screenshot 2024-03-03 at 7 30 34 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/be0c43c0-f597-4dc5-9510-67166b6d68a2">
-
+<br/>
 Ex-3 
 
 ````
@@ -143,16 +153,10 @@ where product_price >=100
 
 <img width="614" alt="Screenshot 2024-03-03 at 7 32 51 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/5116c270-926c-45a0-97dd-338003a7245b">
 
+<br/>
 
 
-
-
-
-
-
-
-
- <h1>Alter command</h1> 
+<h1>Alter command</h1> 
 
  #In sql we use alter command to edit the table and we can perform different task depending upon requirements 
 
@@ -172,7 +176,7 @@ update command in sql is used  to update records in the table
  WHERE id = 5;
 ````
 <img width="657" alt="Screenshot 2024-02-25 at 10 01 08 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/0808aea1-2690-4230-9614-3bb53811bc75">
-
+<br/>
 i have created a new table Orders and created new columns and used datetime function
 ````
 CREATE table orders
@@ -187,11 +191,12 @@ CREATE table orders
 
 
 SELECT * from orders
-````
+
 <img width="657" alt="Screenshot 2024-02-28 at 12 48 26 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/873dd66a-240e-4947-920d-f4b6aa6b3150">
+<br/>
 
 i have inserted some random orders into orders table 
-````
+
 INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),1,3)
 
 INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),2,3)
@@ -206,11 +211,11 @@ INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),6,3)
 ````
 <img width="629" alt="Screenshot 2024-02-29 at 5 22 04 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/818bb519-38d5-42a4-90b9-243567781e2a"> 
 
-
+<br/>
 
 <img width="629" alt="Screenshot 2024-02-29 at 5 22 13 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/2c1d5d6d-9e8d-47c0-87da-2745a074d23f">
 
-
+<br/>
 
 <H1>Foreign keys</H1>
 foreign keys are constraint  used for linking two tables together 
@@ -226,11 +231,12 @@ A FOREIGN KEY is a field (or collection of fields) in one table that refers to t
   alter table orders 
   add foreign key (productID) references product(id)
 ````
+<br/>
   ER Diagram 
 
   <img width="523" alt="Screenshot 2024-02-28 at 2 07 00 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/8628f957-aefe-4825-b317-3683fc5aade9">
 
-
+<br/>
 
   <h1>Inner Join</h1> 
 
@@ -251,6 +257,7 @@ inner JOIN Customer  on Orders.CustomerID =customer.ID
 ````
 <img width="1288" alt="Screenshot 2024-02-29 at 6 11 25 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6b0bb548-ec56-4f80-ae0d-82b26efe5003">
 
+<br/>
 
 i have cleaned the data using alias and removed some columns and simplified the result 
 
@@ -266,7 +273,7 @@ inner join Customer as c on o.CustomerID=c.ID
 
 
 <img width="1286" alt="Screenshot 2024-02-29 at 6 16 30 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/a88e307d-67cc-4863-baa7-1667592af187">
-
+<br/>
 
 with the following data i will be performing various query on this data 
 
@@ -289,7 +296,7 @@ GROUP by c.Firstname
 ````
 
 <img width="608" alt="Screenshot 2024-02-29 at 9 46 45 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/1e19ea01-cc30-4dd0-956a-158bf31607a9">
-
+<br/>
 <h1>Order by </h1>
 
 using order by keyword i have sorted the data in asc and desc order 
@@ -305,7 +312,7 @@ ORDER by c.Firstname DESC
 ````
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/6840de16-04ae-466b-bd90-af0ddf8d2d92)
-
+<br/>
 ASC
 
 ````
@@ -319,7 +326,7 @@ ORDER by c.Firstname ASC
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/af6c0957-f2ea-4b57-a28f-022b5ed7f199)
 
-
+<br/>
 AVG
 
 i have used avg function here to get avg price each person spent 
@@ -333,7 +340,7 @@ GROUP by c.Firstname
 ````
 
 <img width="608" alt="Screenshot 2024-02-29 at 10 01 12 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/7e9ac78d-7ae3-40bf-8098-249e50f620ea">
-
+<br/>
  average spent by city wise 
 ````
  SELECT c.City ,AVG(p.product_price) as Total
@@ -346,7 +353,7 @@ ORDER by c.City asc
 
 <img width="608" alt="Screenshot 2024-02-29 at 10 03 56 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/10cb4b66-f0ad-4065-bc9e-2c6fac7592b9">
 
-
+<br/>
 COUNT 
 
 using count function i have computed list of orders ordered by each person 
@@ -362,7 +369,7 @@ GROUP by c.Firstname
 
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/c556cbbb-d1b6-4446-ad70-e13706aac85f)
-
+<br/>
 
 <h1>Having clause</h1>
 
@@ -382,7 +389,7 @@ HAVING count(p.prodcut_name)>=2
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/f5039e2f-dfae-44a6-8738-e586f1bea8f1)
 
-
+<br/>
 
 created a new database for further practise 
 
@@ -418,6 +425,7 @@ insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(110,'roh
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/2223b089-44c7-4c6f-a9ec-fe6b2b036721)
 
+<br/>
 
 DESCRIBE Table 
 ````
@@ -425,14 +433,14 @@ desc Student
 ````
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/4275588a-ceb8-4dec-bd95-65746c76147a)
-
+<br/>
 ````
 select * from Student
 ````
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/77ce1d4c-b5f1-440c-bb98-6cdcaa5cac83)
 
-
+<br/>
 <h1>Operators </h1>
 
 In SQL we have different operators we can use to perform query's 
@@ -449,7 +457,7 @@ where marks >70 and city='hyderabad'
 ````
 
 <img width="826" alt="Screenshot 2024-03-06 at 1 11 38 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/450d6abf-bd30-4003-9899-1e742e0f3789">
-
+<br/>
 EX-2 
 
 ````
@@ -459,7 +467,7 @@ order by marks DESC
 ````
 
 <img width="732" alt="Screenshot 2024-03-06 at 1 15 47 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/e0e749de-de9a-42d5-9dcb-7838b76d2cde">
-
+<br/>
 
 <H3>OR </H3>
 
@@ -474,7 +482,7 @@ where grade="B" or city ='hyderabad'
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/63c94be5-0cea-4fd8-8f7a-75041a58b133)
 
-
+<br/>
 EX-2
 
 ````
@@ -484,7 +492,7 @@ where marks>=50  or LastName ='shetty'
 ````
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/faddc29d-5b5a-45c2-84a0-af9a663534ce)
-
+<br/>
 <H3>Between operator </H3>
 
 The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
@@ -497,7 +505,7 @@ where marks BETWEEN 60 and 90
 ````
 <img width="732" alt="Screenshot 2024-03-06 at 1 33 41 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/df9641a1-c846-4a31-a217-a8a4ace5376e">
 
-
+<br/>
 <h3>IN operator </h3>
 
 The IN operator allows you to specify multiple values in a WHERE clause.
@@ -507,7 +515,7 @@ select * from Student
 where city in ('delhi','pune')
 ````
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/ca8db7fa-189c-4581-be08-361d75ef0290)
-
+<br/>
 <h3>NOT Operator </h3>
 
 The NOT operator is used in combination with other operators to give the opposite result, also called the negative result.
@@ -519,7 +527,7 @@ where city not in ('delhi','pune')
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/842aff2e-7a9c-4728-a98c-bb606796a754)
 
-
+<br/>
 <h1>Limit clause </h1>
 
 The LIMIT clause is used to specify the number of records to return.
@@ -534,7 +542,7 @@ limit 5
 ````
 
 <img width="732" alt="Screenshot 2024-03-06 at 1 50 28 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/c04ecb33-12b0-4e61-8cfa-55f1c4913f99">
-
+<br/>
 <h3>OFFSET</h3>
 
 MySQL Offset is used to specify from which row we want the data to retrieve. To be precise, specify which row to start retrieving from. Offset is used along with the LIMIT. 
@@ -544,10 +552,10 @@ select * from student
 order by marks desc 
 limit 5 offset 4
 ````
-
+<br/>
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/be9d66f7-f6e0-4754-a326-d553da1bf5ee)
 
-
+<br/>
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/fbb61c8e-2159-4509-ad94-458983b99488)
 
 
@@ -561,7 +569,7 @@ truncate  TABLE student;
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/332b61ae-2407-43e9-b47e-66d991caaf09)
 
-
+<br/>
 <H1>Drop </H1>
 
 The DROP TABLE command deletes a table in the database.
