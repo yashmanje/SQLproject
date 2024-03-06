@@ -934,6 +934,39 @@ where rollno in
 
 <img width="784" alt="Screenshot 2024-03-07 at 4 47 09 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/3f728f8d-f005-495f-8105-a128cadce6b3">
 
+</br>
+
+<h1>Views </h1>
+
+In SQL, a view is a virtual table based on the result-set of an SQL statement.
+
+A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
+
+````
+create view view1 As
+
+select RollNo ,FirstName ,marks  from Student  
+
+select * from view1
+
+````
+<img width="784" alt="Screenshot 2024-03-07 at 5 02 45 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/4090b5ef-e949-4575-99ca-2df50d2273da">
+
+</br>
+
+ we can even perform different queries on views as well 
+
+````
+create view view1 As
+
+select RollNo ,FirstName ,marks  from Student  
+
+select avg(marks) 
+from view1
+ ````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/8caa4fb9-b787-4b6f-8197-d85a5482a560)
+
 
 
 
