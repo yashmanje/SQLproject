@@ -857,6 +857,84 @@ select name  from employee
 
 <img width="784" alt="Screenshot 2024-03-07 at 4 00 44 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/da97b833-6be2-413f-adc8-2722705f7f9f">
 
+</br>
+
+<h2>Union all </h2>
+
+The UNION operator selects only distinct values by default. To allow duplicate values, use UNION ALL:
+
+````
+select name  from employee  
+union all 
+select name  from employee
+````
+
+<img width="784" alt="Screenshot 2024-03-07 at 4 05 15 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/f308cad0-21df-4432-bf78-2b52214adae4">
+
+</br>
+
+<h1>Sub queries </h1>
+
+A subquery is a SQL query nested inside a larger query.
+The subquery can be nested inside a SELECT, INSERT, UPDATE, or DELETE statement or inside another subquery.
+
+for subqueries i have created new database and table 
+
+````
+create database Student_records 
+use student_records
+
+
+create table Student
+(
+RollNo int primary key,
+FirstName varchar(50),
+LastName varchar(50)
+)
+
+select * from student 
+
+alter table Student 
+
+change lastname  marks int
+insert into Student (rollno,firstname,marks)
+values 
+(100,'Pooja',98),
+(101,'Sandeep',68),
+(102,'yashwanth',95),
+(103,'Shekar',88),
+(104,'Deepika',58),
+(105,'kareena',38),
+(106,'Rahul',88),
+(107,'Digvijay',99),
+(108,'Shefali',58),
+(109,'poonam',78),
+(110,'rohit',68)
+````
+
+using sub queries i have calculated those students who got more marks than class avg
+
+````
+select FirstName, marks 
+from Student 
+where marks >(select avg (marks ) from student )
+````
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/2452c289-33a7-48ac-9f48-f8f12f290b61)
+
+</br>
+
+ex-2 
+using sub query i have got the names of students wo have even rollno 
+````
+select FirstName 
+from Student 
+where rollno in 
+(select RollNo  from Student where RollNo %2=0);
+````
+
+<img width="784" alt="Screenshot 2024-03-07 at 4 47 09 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/3f728f8d-f005-495f-8105-a128cadce6b3">
+
+
 
 
 
