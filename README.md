@@ -15,7 +15,7 @@
 
 </br>
  
-# for using the correspondind database we use 'USE' command 
+# for using the corresponding database we use 'USE' command 
 ex --USE customer 
 
 
@@ -69,7 +69,7 @@ desc orders
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/02e7fbda-5765-4d79-90ef-2fae8178320c)
 
 
-
+</br>
 
  <H1> select command </H1>
 
@@ -100,6 +100,8 @@ insert into Customer(id,firstname,lastname,Age,City)values(6,'shareef','murtuza'
 
 <img width="801" alt="Screenshot 2024-02-25 at 8 31 56 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6db3ef79-1998-40d7-afc4-139f937c7b10">
 
+</br>
+
 # I have created a new table for products and inserted the following data into the table 
 ````
 create TABLE product
@@ -123,6 +125,7 @@ select * from product
 ````
 <img width="657" alt="Screenshot 2024-02-25 at 8 52 34 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/faede961-ab2a-42f8-a071-32b089d22ea4">
 
+</br>
 
 <h1>WHERE Clause </h1>
 
@@ -139,6 +142,8 @@ order by Firstname  ASC
 
 <img width="614" alt="Screenshot 2024-03-03 at 7 27 29 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/46c70bf3-04d6-4196-a7e5-a378f1b34cbd">
 
+</br>
+
 Ex-2
 
 ````
@@ -147,6 +152,8 @@ where id =5
 ````
 
 <img width="614" alt="Screenshot 2024-03-03 at 7 30 34 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/be0c43c0-f597-4dc5-9510-67166b6d68a2">
+
+</br>
 
 Ex-3 
 
@@ -158,7 +165,7 @@ where product_price >=100
 <img width="614" alt="Screenshot 2024-03-03 at 7 32 51 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/5116c270-926c-45a0-97dd-338003a7245b">
 
 
-
+</br>
 
 <h1>Alter command</h1> 
 
