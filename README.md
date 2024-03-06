@@ -629,6 +629,51 @@ drop column city
 
 <img width="732" alt="Screenshot 2024-03-06 at 3 16 43 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/5f3024f0-9996-4d9a-bcbd-e9c25e4c2480">
 
+</br>
+
+the drop command is also used for deleting the table 
+
+````
+DROP TABLE student
+````
+<img width="732" alt="Screenshot 2024-03-07 at 1 33 36 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/e6f416e1-8edd-4463-adef-39a2d323bd74">
+
+</br>
+
+the drop command can also be used to drop entire database 
+
+````
+drop database student_records
+````
+<img width="782" alt="Screenshot 2024-03-07 at 1 38 30 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/2937a532-5d4f-4e2f-b083-939f8ade3e2a">
+
+</br>
+
+creating a new database and table to practise different joins 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img width="782" alt="Screenshot 2024-03-07 at 1 38 30 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/2a7e9295-fca6-4d64-8c6e-3efb2a78e7eb">
+
+
+
 
 
 
