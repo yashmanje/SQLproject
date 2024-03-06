@@ -551,7 +551,28 @@ limit 5 offset 4
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/fbb61c8e-2159-4509-ad94-458983b99488)
 
 
+<H1>Truncate </H1>
 
+The TRUNCATE TABLE command deletes the data inside a table, but not the table itself.
+
+````
+truncate  TABLE student;
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/332b61ae-2407-43e9-b47e-66d991caaf09)
+
+
+<H1>Drop </H1>
+
+The DROP TABLE command deletes a table in the database.
+
+````
+alter table Student 
+drop column city
+````
+<br/>
+
+<img width="732" alt="Screenshot 2024-03-06 at 3 16 43 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/5f3024f0-9996-4d9a-bcbd-e9c25e4c2480">
 
 
 
