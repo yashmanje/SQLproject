@@ -691,6 +691,53 @@ values
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/f781a125-c6b7-4043-81a8-d5f5a8e37b9b)
 
 
+</br>
+
+<h2>Inner join </h2>
+
+The INNER JOIN keyword selects records that have matching values in both tables.
+
+from both student and course table we get the matching value below 
+
+````
+select * from student s 
+inner join Course c 
+on 
+s.ID =c.ID 
+````
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/5c530078-7fd9-4782-aaf7-1ef8727bbeba)
+
+</br>
+
+<h2> Left Join </h2>
+
+The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2). The result is 0 records from the right side, if there is no match.
+
+````
+select * from student s 
+left  join Course c 
+on 
+s.ID =c.ID 
+````
+
+<img width="569" alt="Screenshot 2024-03-07 at 2 47 21 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/08d98420-3dd2-490d-a549-1411cb2b6ee7">
+
+</br>
+
+<h2>Right Join </h2>
+
+The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1). The result is 0 records from the left side, if there is no match.
+
+````
+select * from student s 
+Right  join Course c 
+on 
+s.ID =c.ID 
+
+````
+
+<img width="569" alt="Screenshot 2024-03-07 at 2 49 53 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/355c7907-b517-4fbb-b269-007851e59e0e">
+
 
 
 
