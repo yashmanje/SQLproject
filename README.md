@@ -178,6 +178,9 @@ where product_price >=100
      ALTER TABLE product 
     modify  product_price float(6,2);
 ````
+
+</br>
+
  <h1>Update</h1>
 
 update command in sql is used  to update records in the table 
@@ -188,7 +191,10 @@ update command in sql is used  to update records in the table
 ````
 <img width="657" alt="Screenshot 2024-02-25 at 10 01 08 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/0808aea1-2690-4230-9614-3bb53811bc75">
 
+</br>
+
 i have created a new table Orders and created new columns and used datetime function
+
 ````
 CREATE table orders
 (
@@ -205,7 +211,7 @@ SELECT * from orders
 
 <img width="657" alt="Screenshot 2024-02-28 at 12 48 26 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/873dd66a-240e-4947-920d-f4b6aa6b3150">
 
-
+</br>
 i have inserted some random orders into orders table 
 
 INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),1,3)
@@ -222,11 +228,11 @@ INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),6,3)
 ````
 <img width="629" alt="Screenshot 2024-02-29 at 5 22 04 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/818bb519-38d5-42a4-90b9-243567781e2a"> 
 
-
+</br>
 
 <img width="629" alt="Screenshot 2024-02-29 at 5 22 13 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/2c1d5d6d-9e8d-47c0-87da-2745a074d23f">
 
-
+</br>
 
 <H1>Foreign keys</H1>
 foreign keys are constraint  used for linking two tables together 
@@ -247,7 +253,7 @@ A FOREIGN KEY is a field (or collection of fields) in one table that refers to t
 
   <img width="523" alt="Screenshot 2024-02-28 at 2 07 00 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/8628f957-aefe-4825-b317-3683fc5aade9">
 
-
+</br>
 
   <h1>Inner Join</h1> 
 
@@ -268,7 +274,7 @@ inner JOIN Customer  on Orders.CustomerID =customer.ID
 ````
 <img width="1288" alt="Screenshot 2024-02-29 at 6 11 25 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/6b0bb548-ec56-4f80-ae0d-82b26efe5003">
 
-
+</br>
 
 i have cleaned the data using alias and removed some columns and simplified the result 
 
@@ -285,6 +291,7 @@ inner join Customer as c on o.CustomerID=c.ID
 
 <img width="1286" alt="Screenshot 2024-02-29 at 6 16 30 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/a88e307d-67cc-4863-baa7-1667592af187">
 
+</br>
 
 with the following data i will be performing various query on this data 
 
@@ -308,6 +315,8 @@ GROUP by c.Firstname
 
 <img width="608" alt="Screenshot 2024-02-29 at 9 46 45 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/1e19ea01-cc30-4dd0-956a-158bf31607a9">
 
+</br>
+
 <h1>Order by </h1>
 
 using order by keyword i have sorted the data in asc and desc order 
@@ -324,6 +333,8 @@ ORDER by c.Firstname DESC
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/6840de16-04ae-466b-bd90-af0ddf8d2d92)
 
+</br>
+
 ASC
 
 ````
@@ -337,6 +348,7 @@ ORDER by c.Firstname ASC
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/af6c0957-f2ea-4b57-a28f-022b5ed7f199)
 
+</br>
 
 AVG
 
@@ -351,7 +363,7 @@ GROUP by c.Firstname
 ````
 
 <img width="608" alt="Screenshot 2024-02-29 at 10 01 12 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/7e9ac78d-7ae3-40bf-8098-249e50f620ea">
-
+</br>
  average spent by city wise 
 ````
  SELECT c.City ,AVG(p.product_price) as Total
