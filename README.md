@@ -363,7 +363,9 @@ GROUP by c.Firstname
 ````
 
 <img width="608" alt="Screenshot 2024-02-29 at 10 01 12 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/7e9ac78d-7ae3-40bf-8098-249e50f620ea">
+
 </br>
+
  average spent by city wise 
 ````
  SELECT c.City ,AVG(p.product_price) as Total
@@ -376,6 +378,7 @@ ORDER by c.City asc
 
 <img width="608" alt="Screenshot 2024-02-29 at 10 03 56 PM" src="https://github.com/yashmanje/SQLproject/assets/151402001/10cb4b66-f0ad-4065-bc9e-2c6fac7592b9">
 
+</br>
 
 COUNT 
 
@@ -392,6 +395,8 @@ GROUP by c.Firstname
 
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/c556cbbb-d1b6-4446-ad70-e13706aac85f)
+
+</br>
 
 
 <h1>Having clause</h1>
@@ -412,6 +417,7 @@ HAVING count(p.prodcut_name)>=2
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/f5039e2f-dfae-44a6-8738-e586f1bea8f1)
 
+</br>
 
 
 created a new database for further practise 
@@ -448,6 +454,7 @@ insert into  Student (RollNo,FirstName,LastName,marks,grade,city)values(110,'roh
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/2223b089-44c7-4c6f-a9ec-fe6b2b036721)
 
+</br>
 
 
 DESCRIBE Table 
@@ -457,11 +464,15 @@ desc Student
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/4275588a-ceb8-4dec-bd95-65746c76147a)
 
+</br>
+
 ````
 select * from Student
 ````
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/77ce1d4c-b5f1-440c-bb98-6cdcaa5cac83)
+
+</br>
 
 
 <h1>Operators </h1>
@@ -481,6 +492,8 @@ where marks >70 and city='hyderabad'
 
 <img width="826" alt="Screenshot 2024-03-06 at 1 11 38 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/450d6abf-bd30-4003-9899-1e742e0f3789">
 
+</br>
+
 EX-2 
 
 ````
@@ -491,6 +504,7 @@ order by marks DESC
 
 <img width="732" alt="Screenshot 2024-03-06 at 1 15 47 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/e0e749de-de9a-42d5-9dcb-7838b76d2cde">
 
+</br>
 
 <H3>OR </H3>
 
@@ -505,6 +519,7 @@ where grade="B" or city ='hyderabad'
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/63c94be5-0cea-4fd8-8f7a-75041a58b133)
 
+</br>
 
 EX-2
 
@@ -515,6 +530,8 @@ where marks>=50  or LastName ='shetty'
 ````
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/faddc29d-5b5a-45c2-84a0-af9a663534ce)
+
+</br>
 
 <H3>Between operator </H3>
 
@@ -528,6 +545,7 @@ where marks BETWEEN 60 and 90
 ````
 <img width="732" alt="Screenshot 2024-03-06 at 1 33 41 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/df9641a1-c846-4a31-a217-a8a4ace5376e">
 
+</br>
 
 <h3>IN operator </h3>
 
@@ -538,6 +556,8 @@ select * from Student
 where city in ('delhi','pune')
 ````
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/ca8db7fa-189c-4581-be08-361d75ef0290)
+
+</br>
 
 <h3>NOT Operator </h3>
 
