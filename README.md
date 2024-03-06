@@ -563,14 +563,12 @@ limit 5 offset 4
 
 The TRUNCATE TABLE command deletes the data inside a table, but not the table itself.
 
-````
+
 truncate  TABLE student;
-````
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/332b61ae-2407-43e9-b47e-66d991caaf09)
 
 
-<br/>
 
 <H1>Drop </H1>
 
