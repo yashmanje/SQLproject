@@ -8,18 +8,23 @@ Database Structure
 
 In this project, a cricket store database has been created with three distinct tables: Customer, Product, and Orders
 
- Create a database 
+</br>
+ 
+ <h3>Create a database</h3> 
 
-# for creating a database in sql we use create command 
- Syntax ----- create database customer,
+for creating a database in sql we use create command 
+ 
+ ````create database customer;````
 
 </br>
  
-# for using the corresponding database we use 'USE' command 
-ex --USE customer 
+for using the corresponding database we use 'USE' command 
+
+````USE customer```` 
 
 
- creating table in database
+To create a table in a database, you would typically use the CREATE TABLE statement in SQL.
+
 ```` 
 create TABLE Customer
 (
@@ -30,20 +35,18 @@ Age int,
 City VARCHAR(50)
 )
 ````
-
-
-
-# SQL offers different datatypes 
- in this table i have used primary key with integer  as datatype
- and for variable i have Varchar datatype and set the space to 50 
-
-
+*   The "Customer" table is created with columns such as "id," "Firstname," "Lastname," "Age," and "City."
+*   The "id" column is defined as an integer and serves as the primary key,
+*   The "Firstname" and "Lastname" columns are set as variable character (VARCHAR) data types with a maximum length of 50 characters.
+*   The "Age" column is represented as an integer.
+*   The "City" column is also a variable character type with a maximum length of 50 characters.
+ 
 <img width="883" alt="Screenshot 2024-02-25 at 7 53 50 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/51efe4b3-176d-4682-a749-b8eb2190b073">
 
 </br>
 
 <h2>DESCRIBE TABLE </h2>
-i have used here Describe command to show description of following tables 
+ I've utilized the "DESCRIBE" command to present a detailed overview of the tables.
 
 ````
 desc Customer
@@ -73,16 +76,16 @@ desc orders
 
  <H1> select command </H1>
 
-# for viewing a table we use select command 
+# To observe the contents of a table, the SELECT command is utilized.
+  Using "select * from Customer" will showcase all the data stored in the table.
 
-select * from Customer will display all the contents in the table.
+ ```` select * from Customer;```` 
 
+</br>
 
-  <h1> Insert command</h1>
+ <h1> Insert command</h1>
 
 # Insert command in sql is used for inserting records into the table 
-
-EX-
 
 ````
 insert into Customer(id,firstname,lastname,Age,City)values(1,'Yashwanth','Reddy',33,'hyderabad')
@@ -102,7 +105,7 @@ insert into Customer(id,firstname,lastname,Age,City)values(6,'shareef','murtuza'
 
 </br>
 
-# I have created a new table for products and inserted the following data into the table 
+# This code snippet demonstrates the creation of a "product" table and the insertion of data.
 ````
 create TABLE product
 (
@@ -129,9 +132,7 @@ select * from product
 
 <h1>WHERE Clause </h1>
 
-The WHERE clause is used to filter records.
-
-It is used to extract only those records that fulfill a specified condition.
+The WHERE clause functions as a filter for records in a database query. Its purpose is to retrieve only those records that meet a specific condition.
 
 
 ````
