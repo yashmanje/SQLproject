@@ -170,11 +170,10 @@ where product_price >=100
 
 <h1>Alter command</h1> 
 
- #In sql we use alter command to edit the table and we can perform different task depending upon requirements 
+In SQL, the "ALTER" command is used to modify tables, allowing for various tasks based on specific requirements.
+This includes actions such as adding, modifying, or changing the datatype of columns. 
+In this instance, the datatype of the "product_price" table has been modified to "FLOAT(6,2)."
 
- #we can add modify column and even change column datatype as well 
-
- here i have modified product_price table datatype as float(6,2)
 ````
      ALTER TABLE product 
     modify  product_price float(6,2);
@@ -194,7 +193,7 @@ update command in sql is used  to update records in the table
 
 </br>
 
-i have created a new table Orders and created new columns and used datetime function
+i have created a new table ''Orders'' and created new columns and used ''Datetime'' function
 
 ````
 CREATE table orders
@@ -213,7 +212,7 @@ SELECT * from orders
 <img width="657" alt="Screenshot 2024-02-28 at 12 48 26 AM" src="https://github.com/yashmanje/SQLproject/assets/151402001/873dd66a-240e-4947-920d-f4b6aa6b3150">
 
 </br>
-i have inserted some random orders into orders table 
+i have inserted data  into orders table 
 
 INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),1,3)
 
@@ -237,11 +236,10 @@ INSERT into orders (OrderDate ,CustomerID ,ProductID )values (now(),6,3)
 
 <H1>Foreign keys</H1>
 foreign keys are constraint  used for linking two tables together 
-
-A FOREIGN KEY is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.
-
- here i have linked customerid from orders table to customer table id primary key 
+Foreign key is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.
+here i have linked customerid from orders table to customer table id primary key 
  and i have also linked productID from orders table to primary key of products tables 
+ 
 ````
   alter table orders 
   add foreign key (CustomerID) references customer(id)
@@ -298,7 +296,7 @@ with the following data i will be performing various query on this data
 
 
 <h1>Group by </h1>
-n SQL, The Group By statement is used for organizing similar data into groups. 
+In SQL, The Group By statement is used for organizing similar data into groups. 
 the main purpose of grouping the records of a table based on particular columns is to perform calculations on these groups
 typically used with aggregate functions such as SUM(), COUNT(), AVG(), MAX(), or MIN() etc.
 
@@ -484,7 +482,7 @@ In SQL we have different operators we can use to perform query's
 
 The AND operator is used to filter records based on more than one condition
 
-using student table i have implemented AND operator to get results of those students who scored more than 70 and belong to city hyderabad 
+using student table i have used 'AND' operator to get results of those students who scored more than 70 and belong to city hyderabad 
 
 ````
 select * from Student
@@ -511,7 +509,7 @@ order by marks DESC
 
 The OR operator is used to filter records based on more than one condition
 
-using student table i have implemented OR operator to get results of those students who got B grade  and city is hyderabad
+using student table i have used 'OR' operator to get results of those students who got B grade  and city is hyderabad
 
 ````
 select * from Student  
