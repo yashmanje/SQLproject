@@ -1,12 +1,12 @@
   <h1> SQLproject</h1>
-# In this project i have created a sample database to learn and practise sql query's
+# This project involves the creation of a sample database for the purpose of learning and practicing SQL queries.
 
 <h1>INTRODUCTION</h1> 
-# Tools used  mysql community server and debeaver. 
+# The tools utilized for this project include the MySQL Community Server and DBeaver, providing a comprehensive environment for SQL development. 
 
+Database Structure
 
-
-# In this project i have created cricket store with 3 different tables namely customer, product table , order table 
+In this project, a cricket store database has been created with three distinct tables: Customer, Product, and Orders
 
  Create a database 
 
