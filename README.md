@@ -76,7 +76,7 @@ desc orders
 
  <H1> select command </H1>
 
-# To observe the contents of a table, the SELECT command is utilized.
+  To observe the contents of a table, the SELECT command is utilized.
   Using "select * from Customer" will showcase all the data stored in the table.
 
  ```` select * from Customer;```` 
@@ -85,7 +85,7 @@ desc orders
 
  <h1> Insert command</h1>
 
-# Insert command in sql is used for inserting records into the table 
+ Insert command in sql is used for inserting records into the table 
 
 ````
 insert into Customer(id,firstname,lastname,Age,City)values(1,'Yashwanth','Reddy',33,'hyderabad')
@@ -105,7 +105,7 @@ insert into Customer(id,firstname,lastname,Age,City)values(6,'shareef','murtuza'
 
 </br>
 
-# This code snippet demonstrates the creation of a "product" table and the insertion of data.
+ This code snippet demonstrates the creation of a "product" table and the insertion of data.
 ````
 create TABLE product
 (
