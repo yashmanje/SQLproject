@@ -967,7 +967,26 @@ from view1
 
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/8caa4fb9-b787-4b6f-8197-d85a5482a560)
 
+</br>
 
+<h1>Common Common Table Expression</h1>
+
+In SQL, CTE stands for Common Table Expression. It is a temporary result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement. CTEs make complex queries more readable and manageable by breaking them into smaller, modular parts.
+
+SQL query attempts to find students whose marks are greater than the average marks of all students
+
+This query will return all columns for students whose marks are greater than the average marks of all students.
+
+````
+with avg_marks (AVG) as
+(
+select avg(marks) from Student 
+)
+select *
+from student s, avg_marks av
+where s.marks > av.avg
+````
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/38fdf250-326e-4ff7-96f1-4bbc2aa74d2b)
 
 
 
