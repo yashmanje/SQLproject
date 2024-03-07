@@ -987,12 +987,89 @@ where s.marks > av.avg
 ````
 ![image](https://github.com/yashmanje/SQLproject/assets/151402001/38fdf250-326e-4ff7-96f1-4bbc2aa74d2b)
 
+</br>
+
+creating a new database for CTE queries 
+
+create database apple_sales
+use apple_sales
+
+````create table sales
+(
+	store_id  		int,
+	store_name  	varchar(50),
+	product			varchar(50),
+	quantity		int,
+	cost			int
+);
+````
+
+inserted following data 
+
+````
+insert into sales values
+(1, 'Apple Originals 1','iPhone 12 Pro', 1, 1000),
+(1, 'Apple Originals 1','MacBook pro 13', 3, 2000),
+(1, 'Apple Originals 1','AirPods Pro', 2, 280),
+(2, 'Apple Originals 2','iPhone 12 Pro', 2, 1000),
+(3, 'Apple Originals 3','iPhone 12 Pro', 1, 1000),
+(3, 'Apple Originals 3','MacBook pro 13', 1, 2000),
+(3, 'Apple Originals 3','MacBook Air', 4, 1100),
+(3, 'Apple Originals 3','iPhone 12', 2, 1000),
+(3, 'Apple Originals 3','AirPods Pro', 3, 280),
+(4, 'Apple Originals 4','iPhone 12 Pro', 2, 1000),
+(4, 'Apple Originals 4','MacBook pro 13', 1, 2500);
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/1226626f-fe87-465a-882a-3291e623dcd7)
 
 
+Query-1 
 
+Find total sales per each store
 
+````
+select store_id , sum(cost) as total_sales 
+from sales s 
+group by s.store_id 
+````
 
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/34e0ec70-c217-4c4d-b936-adbcc54e5ece)
 
+query-2 
 
+Find average sales with respect to all stores
+
+````
+select avg (t_sales)
+from 
+(
+select store_id ,sum(s.cost) as T_sales from sales s group by s.store_id 
+) 
+as x 
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/8756c305-a3c2-4032-9fc3-e20513b4e764)
+
+</br>
+
+Find stores who's sales where better than the average sales accross all stores using with clause 
+
+````
+WITH total_sales as
+		(select s.store_id, sum(s.cost) as total_sales_per_store
+		from sales s
+		group by s.store_id),
+	avg_sales as
+		(select avg(total_sales_per_store) as avg_sale_for_all_store
+		from total_sales)
+select *
+from   total_sales
+join   avg_sales
+on total_sales.total_sales_per_store > avg_sales.avg_sale_for_all_store;
+
+````
+
+![image](https://github.com/yashmanje/SQLproject/assets/151402001/d6b0db24-f13f-4276-b2f8-bdfe5eb364a5)
 
 
